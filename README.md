@@ -39,3 +39,23 @@ https://www.w3schools.com/html/html_intro.asp
 
 ** 시작태그만 있는 Element : Empty element
 ```
+
+### HTML Element
+https://www.w3schools.com/html/html_elements.asp
+
+> 포함관계
+> - 기준에 따라서 조상요소(Ancsetor), 부모요소(Parent), 자식요소(Child), 자손요소(Descendant)
+
+```
+<html>
+  <body>
+    <h1>web page</h1>
+  </body>
+</html>
+
+*html : body의 부모요소, h1의 조상요소
+
+*body : html의 자식요소, h1의 부모요소
+
+*h1 : html의 자손요소, body의 
+```
