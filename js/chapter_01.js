@@ -1,3 +1,5 @@
+// 변수(let, const), if구문, 증가연산
+
 let a = 1;
 const b = 5;
 
@@ -12,6 +14,8 @@ if (a < 3) {
 } else {
   console.log("<false");
 }
+
+// 삼항 연산자 정리
 
 if (true) {
   console.log("true");
