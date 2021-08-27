@@ -15,17 +15,17 @@ document.getElementById("text1").innerHTML = "Hello World";
 
 const para1 = document.createElement("p");
 const node1 = document.createTextNode("Hello");
-const element1 = para1.appendChild(node1);
+para1.appendChild(node1);
 
-document.querySelectorAll(".text2")[0].appendChild(element1);
+document.querySelectorAll(".text2")[0].appendChild(para1);
 
 // text2 class의 모두 html5 구문을 추가하고 싶을 때
 let text2Element = document.querySelectorAll(".text2");
 for (let i = 0; i < text2Element.length; i++) {
   let para = document.createElement("p");
   let node = document.createTextNode("Hello HTML 5");
-  let element = para.appendChild(node);
-  text2Element[i].appendChild(element);
+  para.appendChild(node);
+  text2Element[i].appendChild(para);
 }
 
 // document.querySelector('.test2').appendChild('<P>')

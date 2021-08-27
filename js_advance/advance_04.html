@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .heading {
+        color: blue;
+      }
+
+      .font {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Style Control</h1>
+
+    <button type="button" class="btn">change style</button>
+    <button type="button" class="btn2">add class</button>
+
+    <script>
+      const heading = document.querySelector(".heading");
+      const button = document.querySelector(".btn");
+      const button2 = document.querySelector(".btn2");
+
+      // 인라인 형식으로 적용하는 방식
+      button.addEventListener("click", function () {
+        heading.style.color = "red";
+      });
+      // class를 추가해서 적용하는 방식( 이 방법을 적용하는 것이 우선순위와 제어면에서 편하다 추천!!!)
+      button2.addEventListener("click", function () {
+        // add, remove, toggle(왔다 갔다 하는 거)
+        heading.classList.toggle("font");
+      });
+    </script>
+  </body>
+</html>
